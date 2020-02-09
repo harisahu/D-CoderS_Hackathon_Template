@@ -81,22 +81,22 @@ footer {
   <nav class="nav">
     <ul>
       <li><a href=""><h2>Home</h2></a></li>
-      <li><a href=""><h2>news</h2></a></li>
-      <li><a href=""><h2>notice</h2></a></li>
+      <li><a href=""><h2>News</h2></a></li>
+      <li><a href=""><h2>Notice</h2></a></li>
     </ul>
   </nav>
 
 <article class="art">
-<form action="mailto:omsahu.cool@gmail.com" method="post" enctype="text/plain">
+<form NAME="CONTACTME" action="mailto:omsahu.cool@gmail.com" method="post" enctype="text/plain" onsubmit="return validateForm()">
 
   <label>Your name:</label> <br />
-  <input type="text" name="NAME:" > <br /> <br />
+  <input type="text" name="NAME:" required> <br /> <br />
 
   <label>Your e-mail:</label> <br />
-  <input type="email" name="EMAIL:" > <br /> <br />
+  <input type="email" name="EMAIL:" required> <br /> <br />
 
   <label>Your registration number:</label> </br>
-  <input type="text" name="REG. NO:"> </br> <br />
+  <input type="number" name="REG.NO:" required> </br> <br />
 
   <label>Your message:</label> <br />
   <textarea name="MESSAGE:" rows="10" cols="30" ></textarea> <br />
