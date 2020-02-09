@@ -96,8 +96,25 @@
 </tr>
 
 <tr>
-  <td><img id="thursday"></td>
-  <td><img id="friday"></td>
+  <td>
+    <div class="box1">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="wednesday" class="image" id="thursday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">thursday</div>
+      </div>
+    </div>
+  </td>
+
+  <td>
+    <div class="box1">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="wednesday" class="image" id="friday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">friday</div>
+      </div>
+    </div>
+  </td>
 </tr>
   </table>
 
@@ -145,6 +162,40 @@ return image;
 
 function displayRandomImage() {
 var htmlImage = document.getElementById("tuesday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+
+<script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("thursday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+
+<script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("friday");
 htmlImage.src = getRandomImage();
 }
 displayRandomImage();
