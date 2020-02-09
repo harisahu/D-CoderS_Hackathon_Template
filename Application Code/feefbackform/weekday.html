@@ -16,14 +16,24 @@
 
  .box1 {
   position: relative;
-  width: 250px;
-  heigth: 300px;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.box2 {
+ position: relative;
+ float: center;
+ width: 33.33%;
+ padding: 15px;
 }
 
 .image {
   display: block;
   width: 250px;
   height: 300;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -44,6 +54,10 @@
 }
 
 .box1:hover .overlay {
+  opacity: 1;
+}
+
+.box2:hover .overlay {
   opacity: 1;
 }
 
@@ -99,7 +113,7 @@
 
 <div class="row">
 
-    <div class="box1">
+    <div class="box2">
       <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
       alt="wednesday" class="image" id="thursday" height="250" width="350" style="border-radius:25px;">
       <div class="overlay">
@@ -108,7 +122,7 @@
     </div>
 
 
-    <div class="box1">
+    <div class="box2">
       <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
       alt="wednesday" class="image" id="friday" height="250" width="350" style="border-radius:25px;">
       <div class="overlay">
