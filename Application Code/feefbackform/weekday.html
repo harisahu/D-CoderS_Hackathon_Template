@@ -22,8 +22,8 @@
 
 .image {
   display: block;
-  width: 70%;
-  height: 70%;
+  width: 250px;
+  height: 300;
 }
 
 .overlay {
@@ -60,7 +60,7 @@
 
 <body>
 
-  <table>
+  <table  cellspacing="60">
 <tr>
   <td>
     <div class="box1">
@@ -127,7 +127,7 @@ return image;
 }
 
 function displayRandomImage() {
-var htmlImage = document.getElementById("wenesday");
+var htmlImage = document.getElementById("wednesday");
 htmlImage.src = getRandomImage();
 }
 displayRandomImage();
