@@ -26,6 +26,10 @@
   height: 300;
 }
 
+.row {
+  display: flex;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -60,9 +64,8 @@
 
 <body>
 
-  <table  cellspacing="60">
-<tr>
-  <td>
+<div class="row">
+
     <div class="box1">
       <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
       alt="monday" class="image" id="monday" height="250" width="350" style="border-radius:25px;">
@@ -70,10 +73,9 @@
        <div class="text">monday</div>
       </div>
     </div>
-  </td>
 
 
-  <td>
+
     <div class="box1">
       <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
       alt="tuesday" class="image" id="tuesday" height="250" width="350" style="border-radius:25px;">
@@ -81,9 +83,9 @@
        <div class="text">tuesday</div>
       </div>
     </div>
-  </td>
 
-  <td>
+
+
     <div class="box1">
       <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
       alt="wednesday" class="image" id="wednesday" height="250" width="350" style="border-radius:25px;">
@@ -91,12 +93,12 @@
        <div class="text">wednesday</div>
       </div>
     </div>
-  </td>
+</div>
 
-</tr>
 
-<tr>
-  <td>
+
+<div class="row">
+
     <div class="box1">
       <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
       alt="wednesday" class="image" id="thursday" height="250" width="350" style="border-radius:25px;">
@@ -104,9 +106,8 @@
        <div class="text">thursday</div>
       </div>
     </div>
-  </td>
 
-  <td>
+
     <div class="box1">
       <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
       alt="wednesday" class="image" id="friday" height="250" width="350" style="border-radius:25px;">
@@ -114,9 +115,9 @@
        <div class="text">friday</div>
       </div>
     </div>
-  </td>
-</tr>
-  </table>
+</div>
+
+
 
   <script>
 function getRandomImage() {
