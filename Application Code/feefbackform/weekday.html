@@ -16,13 +16,14 @@
 
  .box1 {
   position: relative;
-  width: 50%;
+  width: 250px;
+  heigth: 300px;
 }
 
 .image {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 70%;
+  height: 70%;
 }
 
 .overlay {
@@ -81,8 +82,17 @@
       </div>
     </div>
   </td>
-  
-  <td><img id="wednesday"></td>
+
+  <td>
+    <div class="box1">
+      <img src="https://oi19.photobucket.com/albums/b151/jtriverdog06/DSC02838edit.jpg"
+      alt="wednesday" class="image" id="wednesday" height="250" width="350" style="border-radius:25px;">
+      <div class="overlay">
+       <div class="text">wednesday</div>
+      </div>
+    </div>
+  </td>
+
 </tr>
 
 <tr>
@@ -101,6 +111,23 @@ return image;
 
 function displayRandomImage() {
 var htmlImage = document.getElementById("monday");
+htmlImage.src = getRandomImage();
+}
+displayRandomImage();
+
+</script>
+
+
+<script>
+function getRandomImage() {
+var images = [ 'https://oi301.photobucket.com/albums/nn42/_muybonita_/1893203974_241330726f_b.jpg', 'https://oi155.photobucket.com/albums/s289/gooiool/Butterfly1078xPROOF.jpg'];
+var image = images[Math.floor(Math.random()*images.length)];
+
+return image;
+}
+
+function displayRandomImage() {
+var htmlImage = document.getElementById("wenesday");
 htmlImage.src = getRandomImage();
 }
 displayRandomImage();
