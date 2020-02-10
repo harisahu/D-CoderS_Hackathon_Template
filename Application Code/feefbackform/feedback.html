@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<HTML>
+
+  <HEAD>
+    <meta charset="utf-8" >
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title> feedback</title>
+
+    <style>
+      .{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: helvetica;
+      }
+
+      body{
+        background-color:#f1f1f1
+      }
+
+      .main{
+        width: 500px;
+        margin: 50px auto;
+        border: 3px solid #ccc;
+        border-radius: 10px;
+        background-color: #fffaf0;
+        border-left: 40px solid #ccc;
+
+      }
+
+      .info {
+        width: 100px;
+        padding: 8px;
+        backgrounf-color: #dc143c;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+      }
+
+      .formlayout{
+        padding: 25px;
+      }
+
+      label{
+        color:navy;
+        font-size: 20px;
+
+      }
+
+      .inp{
+        width: 100px;
+        padding: 10px;
+        margin-bottom: 5px;
+        border: 2px solid #666;
+        border-radius: 5px;
+        font-weight: bold;
+        border-right: 20px solid #666;
+        border-left: 20px solid #666;
+
+      }
+
+
+    </style>
+
+  </HEAD>
+
+  <body>
+    <div class="main">
+      <div class="info"> Give your precious feedback!</div>
+      <form action="#" method="post" name="form" class="formlayout">
+        <label>Name</label> <br />
+        <input type="text" name="name" class="inp" placeholder="Enter your name" required > <br />
+
+        <label>Email Id</label> <br />
+        <input type="email" name="email" class="inp" placeholder="Enter your email" required > <br />
+
+        <label>Phone</label> <br />
+        <input type="tel" name="phone" class="inp" required > <br />
+
+        <label>Your feedback</label> <br />
+        <textarea name="feedback" class="inp" id="msg-box" rows="6" cols="10"></textarea> <br />
+
+        <input type="submit" name="submit" value="send" class="sub-button" >
+        </form>
+      </div>
+
+  </body>
+
+
+</HTML>
